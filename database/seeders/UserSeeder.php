@@ -22,7 +22,6 @@ class UserSeeder extends Seeder
         // Laravel 8's factory methods are DREADFUL for this so we do it manually for reasons of time.
         $admins->each(function ($item, $key) {
             $item->assignRole ('admin');
-            $item->createToken ('Personal Access Token');
         });
 
         $guests = User::factory(7)
