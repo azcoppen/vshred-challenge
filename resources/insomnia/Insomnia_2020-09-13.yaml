@@ -1,0 +1,216 @@
+_type: export
+__export_format: 4
+__export_date: 2020-09-14T03:14:45.965Z
+__export_source: insomnia.desktop.app:v2020.3.3
+resources:
+  - _id: req_0a5dcdb3943d445fbd3e90edf27c0657
+    authentication:
+      token: 1|Phdzs03KfvGXzZCgbFkOnxB7dAqNsW6sTBxqPbCy
+      type: bearer
+    body: {}
+    created: 1600049721243
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1600049721243
+    method: GET
+    modified: 1600051306435
+    name: Users - LIST
+    parameters: []
+    parentId: wrk_2e1abc26f5634b9cab4ca69b1e1e31e3
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: http://127.0.0.1:8001/api/users?include=images
+    _type: request
+  - _id: wrk_2e1abc26f5634b9cab4ca69b1e1e31e3
+    created: 1600049290039
+    description: ""
+    modified: 1600049290039
+    name: Vshred
+    parentId: null
+    scope: null
+    _type: workspace
+  - _id: req_91cdf66e449e4d758a992a6c1aac7be7
+    authentication:
+      token: 1|Phdzs03KfvGXzZCgbFkOnxB7dAqNsW6sTBxqPbCy
+      type: bearer
+    body:
+      mimeType: application/x-www-form-urlencoded
+      params:
+        - description: ""
+          id: pair_e3da0680303b43a495f42f0a2dc12c40
+          name: name
+          value: New User
+        - description: ""
+          id: pair_29a36e83d27d4f0d8fcab79354e16997
+          name: email
+          value: someone@example.com
+        - description: ""
+          id: pair_6156449996cd4ba6bd7e34078291efc6
+          name: password
+          value: "12345"
+    created: 1600051335084
+    description: ""
+    headers:
+      - id: pair_06e56b5245b64f9e8c8f24f658c8711e
+        name: Accept
+        value: application/json
+      - description: ""
+        id: pair_67bb3f629b2f44efbd03588e0ff307e3
+        name: ""
+        value: ""
+      - id: pair_99671135c0534cd5943fe8968edb84a7
+        name: Content-Type
+        value: application/x-www-form-urlencoded
+      - description: ""
+        id: pair_c4d214e1cc184e6a9dfe204d68298838
+        name: ""
+        value: ""
+    isPrivate: false
+    metaSortKey: -1595547713852.5
+    method: POST
+    modified: 1600051779593
+    name: Users - STORE
+    parameters: []
+    parentId: wrk_2e1abc26f5634b9cab4ca69b1e1e31e3
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: http://127.0.0.1:8001/api/users
+    _type: request
+  - _id: req_f53888c53c8b45449fc1f865ee1121bc
+    authentication:
+      token: 1|Phdzs03KfvGXzZCgbFkOnxB7dAqNsW6sTBxqPbCy
+      type: bearer
+    body: {}
+    created: 1600051349211
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1593296710157.25
+    method: GET
+    modified: 1600051357552
+    name: Users - SHOW
+    parameters: []
+    parentId: wrk_2e1abc26f5634b9cab4ca69b1e1e31e3
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: http://127.0.0.1:8001/api/users/2
+    _type: request
+  - _id: req_7d958295d79249708f94c27089612c4b
+    authentication:
+      token: 1|Phdzs03KfvGXzZCgbFkOnxB7dAqNsW6sTBxqPbCy
+      type: bearer
+    body:
+      mimeType: application/x-www-form-urlencoded
+      params:
+        - description: ""
+          id: pair_f64d136018184d1bba7c798067caa75c
+          name: name
+          value: Updated Name
+    created: 1600051523288
+    description: ""
+    headers:
+      - id: pair_eedd7173b4224cf795358edd8b3c1a4b
+        name: Content-Type
+        value: application/x-www-form-urlencoded
+    isPrivate: false
+    metaSortKey: -1592171208309.625
+    method: PATCH
+    modified: 1600051579280
+    name: Users - UPDATE
+    parameters: []
+    parentId: wrk_2e1abc26f5634b9cab4ca69b1e1e31e3
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: http://127.0.0.1:8001/api/users/10
+    _type: request
+  - _id: req_1bb7b6ff70554ea38ee1b901f1f49121
+    authentication:
+      token: 1|Phdzs03KfvGXzZCgbFkOnxB7dAqNsW6sTBxqPbCy
+      type: bearer
+    body: {}
+    created: 1600051535066
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1591608457385.8125
+    method: DELETE
+    modified: 1600051540159
+    name: Users - DESTROY
+    parameters: []
+    parentId: wrk_2e1abc26f5634b9cab4ca69b1e1e31e3
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: http://127.0.0.1:8001/api/users/7
+    _type: request
+  - _id: env_06e8f94f48afd5c16132cbfdc98fad6df7221318
+    color: null
+    created: 1600049290660
+    data: {}
+    dataPropertyOrder: null
+    isPrivate: false
+    metaSortKey: 1600049290660
+    modified: 1600049290660
+    name: Base Environment
+    parentId: wrk_2e1abc26f5634b9cab4ca69b1e1e31e3
+    _type: environment
+  - _id: jar_06e8f94f48afd5c16132cbfdc98fad6df7221318
+    cookies:
+      - creation: 2020-09-14T02:48:36.584Z
+        domain: 127.0.0.1
+        expires: 2020-09-14T04:48:46.000Z
+        extensions:
+          - samesite=lax
+        hostOnly: true
+        id: "29708242890251246"
+        key: XSRF-TOKEN
+        lastAccessed: 2020-09-14T02:48:46.670Z
+        maxAge: 7200
+        path: /
+        value: eyJpdiI6IndHbnlIRVR1MTN6MjV2QlVlODVLV0E9PSIsInZhbHVlIjoiODhUdnp5cDlucy9waHN1MnpTaW9vam5sVVlXWW5pWFFNdlgyalEySVpjdEVkd1ZlZkNGSFN1MXU5UlpHUER4alhyL3g0MThlb0dQWVZuY09LL2hEci9RQk1Ma256blh6TUd1MCtWNWFJUDhVN1d0MjNEMUdTaUJMYVlWZDNtamIiLCJtYWMiOiI3YmUxMWFlYWU0NzMyMmNjOGI3NzEyMTg3NjAwYjY3ZGY5OWFiNmIwOWEzNmRiMDhiYjY5ZDQwNDEwMmQ4ODE3In0%3D
+      - creation: 2020-09-14T02:48:36.586Z
+        domain: 127.0.0.1
+        expires: 2020-09-14T04:48:46.000Z
+        extensions:
+          - samesite=lax
+        hostOnly: true
+        httpOnly: true
+        id: "47174189521004317"
+        key: vshred_challenge_session
+        lastAccessed: 2020-09-14T02:48:46.670Z
+        maxAge: 7200
+        path: /
+        value: eyJpdiI6IjVHWGdReDRudDF5MzVaaGNHWW1sL3c9PSIsInZhbHVlIjoiS3FnYUNtZnJyL1lmZ3pBSUxyYVB3VkhkY2xwNUEwTFQzTmtjbEQzYjJjNUpGTXhlajN1OXVrZXZPV05hQUgvU1hMZzNNOVVTVTMrdDFRS0phR1VQZ1JNS3MvOTdHdjR3Z0gzSjhyaTIwaTl4N3Q4cmNhOTk5czFqVHNveE56QkUiLCJtYWMiOiJlZDM1MGQ1M2RkYzUzNzJhNjk3Y2QwYjM2NzBhZDIxNzc3MTk0YjhmMmZiMDc4NzU2YzlhZjc2ZmM1YTU4ZjJhIn0%3D
+    created: 1600049290666
+    modified: 1600051726671
+    name: Default Jar
+    parentId: wrk_2e1abc26f5634b9cab4ca69b1e1e31e3
+    _type: cookie_jar
+  - _id: spc_348554c490524baca95e5f112e863af4
+    contentType: yaml
+    contents: ""
+    created: 1600049290104
+    fileName: Vshred
+    modified: 1600049290104
+    parentId: wrk_2e1abc26f5634b9cab4ca69b1e1e31e3
+    _type: api_spec
